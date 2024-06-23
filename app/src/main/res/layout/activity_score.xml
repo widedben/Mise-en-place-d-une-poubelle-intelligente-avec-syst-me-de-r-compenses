@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".score">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+>
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="295dp"
+                android:layout_height="137dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/shadow" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:text="score"
+                android:textColor="#040000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                app:layout_constraintStart_toStartOf="@+id/imageView19"
+                app:layout_constraintTop_toTopOf="@+id/imageView19" />
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="280dp"
+                android:layout_height="299dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView16"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/scoree" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <include layout="@layout/shadow_carton"
+            android:id="@+id/shadow_carton"/>
+        <include layout="@layout/shadow_bouteille"
+            android:id="@+id/shadow_bouteille"/>
+        <include layout="@layout/shadow_battrie"
+            android:id="@+id/shadow_battrie"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

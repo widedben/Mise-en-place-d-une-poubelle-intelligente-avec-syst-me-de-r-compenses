@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBcAmNmCvJjSKesAfk1oHbn_xetElcn8Ac</string>
+
+    <string name="facebook_app_id">452181057232645</string>
+    <string name="fb_login_protocol_scheme">fb452181057232645</string>
+
+
+</resources>
+
